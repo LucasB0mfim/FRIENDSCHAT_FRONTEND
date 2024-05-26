@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
                     <td>${task.id}</td>
-                    <td>${task.task}</td>
+                    <td class="comment-cell">${task.task}</td>
                     <td>${new Date(task.created_at).toLocaleString()}</td>
                 `;
                 tasksTableBody.appendChild(tr);
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td>${newTask.id}</td>
-                <td>${newTask.task}</td>
+                <td class="comment-cell">${newTask.task}</td>
                 <td>${new Date(newTask.created_at).toLocaleString()}</td>
             `;
             tasksTableBody.appendChild(tr);

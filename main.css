@@ -60,3 +60,8 @@ button {
 .AddTask {
     margin-top: 40px;
 }
+
+.comment-cell {
+    max-width: 400px; 
+    word-wrap: break-word; 
+}
