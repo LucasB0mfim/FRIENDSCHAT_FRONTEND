@@ -47,6 +47,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        max-width: 768px;
+        width: 100%;
+        padding: 80px 8px;
+    }
 }
 
 table {
@@ -54,8 +60,9 @@ table {
     border-collapse: collapse;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px; /* Bordas arredondadas */
-    overflow: hidden; /* Evita que o conteúdo exceda as bordas arredondadas */
+    border-radius: 10px; 
+    overflow: hidden;
+
 }
 
 th, td {
@@ -90,6 +97,10 @@ input {
 .comment-cell {
     max-width: 400px;
     word-wrap: break-word;
+
+    @media (max-width: 768px) {
+        max-width: 200px;
+    }
 }
 
 .data {
