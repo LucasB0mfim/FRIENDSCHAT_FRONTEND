@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
             tasks.forEach(task => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td>${task.id}</td>
+                    <td class="id">${task.id}</td>
                     <td class="comment-cell">${task.task}</td>
-                    <td>${new Date(task.created_at).toLocaleString()}</td>
+                    <td class="data">${new Date(task.created_at).toLocaleString()}</td>
                 `;
                 tasksTableBody.appendChild(tr);
             });
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Exibe mensagem de sucesso
             const messageDiv = document.getElementById('message');
-            messageDiv.textContent = 'Tarefa adicionada com sucesso.';
+            messageDiv.textContent = 'Mensagem enviada';
             messageDiv.classList.remove('error');
             messageDiv.classList.add('success');
 
